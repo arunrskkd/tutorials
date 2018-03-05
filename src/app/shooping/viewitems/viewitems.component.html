@@ -1,0 +1,28 @@
+<div class="container-fluid mt-5">
+    <div class="alert alert-success mb-3" role="alert">
+        View Products
+      </div>
+      <div class="row " >
+        <div  class="  my-3 col-sm-6    col-lg-4"  *ngFor="let item of items;let i =index">
+          <div class="newstyletwo">
+              <div class="sect">
+                  <img class="card-img-top" src="{{ item.productimage }}" alt="Card image cap">
+                </div>
+                <div class="card-block newstyleone">
+                  <h5 class="card-title">Name: {{item.productname}}</h5>
+                  <p class="card-text">Details: {{item.detail}}</p>
+                  <p class="card-text">Price : {{item.productcost}} RS</p>
+                  <p>{{productcolor}}</p>
+                </div>
+                <a  class="badge badge-success mx-3" routerLink="/shopping/edititems/{{i}}">edit</a> <a class="badge badge-danger mr-3" (click)="ondel(i)">delete</a><a class="badge badge-primary " (click)="buyitem(item)"> buy</a>
+          </div>
+           
+          </div>
+        
+        
+      </div>
+      <ng-template #noitem>
+       <h5> No item in list</h5>
+     </ng-template>
+
+</div>

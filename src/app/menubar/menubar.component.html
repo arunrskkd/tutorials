@@ -1,0 +1,30 @@
+<div class="row menutop">
+  
+  <h3><i><ng-content></ng-content></i></h3>
+</div>
+
+<div class="row">
+    <div class="vertical-menu">
+        <ng-template [ngIf]="ser.isauthenticated() ">
+          
+        <a *ngIf="role.getrole() == 'admin' " routerLink="shopping/additem" routerLinkActive="active" >Add Product</a>
+        <a  routerLink="shopping/viewitem" routerLinkActive="active"  >View Products</a>
+         <a  routerLink="shopping/deliveries" routerLinkActive="active"  >Deliveries</a> 
+        </ng-template>
+         <ng-template [ngIf]="!ser.isauthenticated() ">
+            <a  routerLink="hr/signin" routerLinkActive="active"  >signin</a> 
+                  <a  routerLink="hr/signup" routerLinkActive="active"  >signup</a> 
+               
+         </ng-template>
+         <ng-template [ngIf]="ser.isauthenticated() ">
+
+            <a (click)="logout()" >logout</a> 
+         </ng-template>
+         <a  routerLink="hr/tut" routerLinkActive="active"  >tut</a> 
+         
+      
+        
+       
+      </div>
+
+</div>

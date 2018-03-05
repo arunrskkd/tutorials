@@ -1,0 +1,30 @@
+.newclr{
+    background: rgb(219, 203, 203);
+}
+.newstyleone{
+    background: #eeeeee;
+ padding: 14px; 
+ }
+ .newstyletwo{
+     background: #eeeeee;
+ }
+ .badge{
+    width: 26%;
+     padding: 10px;
+     margin-bottom: 20px;
+     cursor: pointer;
+ }
+ .sect{
+     width: 100%;
+     height: 240px;
+     overflow: hidden;
+     background: rgba(0, 0, 0, 0.97);
+ }
+ .sect img:hover{
+     transform: scale(1.2);
+     transition: 1s;
+ }
+ .sect img{
+   
+    transition: 1s;
+}

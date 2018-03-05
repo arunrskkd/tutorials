@@ -1,0 +1,33 @@
+<div class="container-fluid mt-5"> <marquee style="color:red">Signin with admin@gmail.com , password:123456 or sign up new user</marquee>
+    <div class="alert alert-success mb-3" role="alert">
+        Signin
+      </div>
+     
+  <div class="row">
+    <div class="col-sm-6">
+        <form (ngSubmit)="onsignin(f)"  #f="ngForm">
+            <div class="form-group">
+                <label for="">email</label>
+                <input type="text" class="form-control" name="email" ngModel>
+              </div>
+              <div class="form-group">
+                  <label for="">password</label>
+                  <input type="text" class="form-control" name="password" ngModel>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+          
+          
+            </form>
+    </div>
+
+  </div>
+   
+   
+  
+  
+  
+    
+    
+  </div>
